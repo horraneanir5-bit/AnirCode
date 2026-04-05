@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحميل مشروع رادار الأردوينو</title>
+    <style>
+        /* إعدادات عامة لتوسيع الصفحة وجمالها */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            direction: rtl; /* اتجاه النص من اليمين لليسار */
+        }
+
+        /* حاوية التحميل الرئيسية */
+        .download-container {
+            background: white;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        /* تحريك الحاوية برفق عند تحميل الصفحة */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .download-container {
+            animation: fadeInDown 0.5s ease-out;
+        }
+
+        /* العنوان */
+        .download-container h2 {
+            color: #d32f2f; /* لون أحمر احترافي */
+            margin-bottom: 10px;
+        }
+
+        /* الوصف */
+        .download-container p {
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        /* تخصيص زر التحميل */
+        .download-button {
+            background-color: #d32f2f;
+            color: white;
+            padding: 18px 45px;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(211, 47, 47, 0.3);
+            transition: all 0.3s ease; /* أنيميشن سلس لكل التغييرات */
+            display: inline-flex;
+            align-items: center;
+            gap: 10px; /* مسافة بين الأيقونة والنص */
+            text-decoration: none; /* إزالة الخط تحت الرابط */
+        }
+
+        /* تأثير عند مرور الفأرة فوق الزر */
+        .download-button:hover {
+            background-color: #b71c1c; /* لون أغمق قليلاً */
+            transform: translateY(-5px) scale(1.05); /* يرتفع ويكبر قليلاً */
+            box-shadow: 0 8px 25px rgba(211, 47, 47, 0.5);
+        }
+
+        /* تأثير عند الضغط على الزر */
+        .download-button:active {
+            transform: translateY(-2px) scale(1);
+            box-shadow: 0 4px 10px rgba(211, 47, 47, 0.3);
+        }
+
+        /* تخصيص أيقونة التحميل داخل الزر */
+        .download-icon {
+            font-size: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        /* تحريك الأيقونة لأسفل عند مرور الفأرة */
+        .download-button:hover .download-icon {
+            transform: translateY(3px);
+        }
+
+        /* حاوية كلمة المرور */
+        .password-box {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        /* نص كلمة المرور */
+        .password-text {
+            color: #d32f2f;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="download-container">
+        <h2>📦 تحميل مشروع رادار الأردوينو</h2>
+        <p>انقر أدناه للحصول على حزمة المشروع الكاملة (.rar)</p>
+
+        <a href="Robotique.rar" class="download-button" download>
+            <span class="download-icon">📥</span>
+            تحميل المشروع كامل
+        </a>
+
+        <div class="password-box">
+            <span style="color: #666;">كلمة المرور (Password):</span>
+            <code class="password-text">RobotiqueMajd</code>
+        </div>
+        
+        <p style="font-size: 14px; color: #888; margin-top: 15px;">يحتوي الملف على الكود ومخطط التوصيل ورابط المحاكاة.</p>
+    </div>
+
+</body>
+</html>
